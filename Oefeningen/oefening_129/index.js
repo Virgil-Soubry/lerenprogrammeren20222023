@@ -1,0 +1,1 @@
+let gevraagd = Number(prompt("Voer een getal in."))
