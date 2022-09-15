@@ -1,14 +1,14 @@
-let lijnen = Number(prompt("Geef een even aantal lijnen in"));
+const lijnen = Number(prompt("Geef een even aantal lijnen in"));
+const helft = lijnen / 2;
 let ster = "*";
-let i = 1
-let x = 5
-for (i; i <= lijnen/2; i++) {
+let i = 1;
+
+for (i; i <= helft; i++) {
     console.log(ster);
     ster = ster + "*";
-
 }
-for (x; x <= lijnen; x++) {
+ster = ster.substring(0, ster.length - 1);
+for (let i = 1; i <= helft; i++) {
     console.log(ster);
-    ster = ster - "*";
-
+    ster = ster.substring(0, ster.length - 1);
 }
