@@ -4,11 +4,12 @@ let y = 1;
 let opvangbak = ""
 
 for (i; i <= ingegevenGetal; i++) {
-    opvangbak = opvangbak + y + ",";
     if (y <= ingegevenGetal) {
+        opvangbak = opvangbak + y + ",";
+    } else if (y <= ingegevenGetal) {
 
         console.log(y);
     }
     y *= 2;
-
 }
+
