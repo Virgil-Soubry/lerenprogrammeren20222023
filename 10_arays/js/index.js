@@ -77,6 +77,24 @@ cursisten.forEach(mijnFunctie)
 function mijnFunctie(value, index){
     console.log(index,":", value);
 }
+let getal1 = Number(prompt("Geef een getal in"))
+let getal2=  Number(prompt("Geef een getal in"))
+
+function som(a,b){
+    return a+b;
+}
+let resultaat= som(getal1,getal2);
+console.log(resultaat)
+
+function product(a,b){
+    return a*b;
+}
+let resultaat2= product(getal1,getal2);
+console.log(resultaat2)
+
+
+
+
 
 let number =[1,2,3,4,5];
 let multiply= number.map(x=>x*2);
