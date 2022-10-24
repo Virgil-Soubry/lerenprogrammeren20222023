@@ -1,9 +1,17 @@
-/**1.
-Vraag aan de gebruiker een zin in te geven. Druk deze zin in hoofdletters af op het scherm.
-    Voorbeeld:
-Geef een zin in: full stack developers
-Resultaat: FULL STACK DEVELOPERS**/
+/**Vraag aan de gebruiker om een begingetal en een eindgetal in te geven. Zorg ervoor dat je een onderstaand resultaat kan bereiken.
+ Voorbeeld:
+ Geef een begingetal in: 2
+ Geef een eindgetal in: 6
+ Resultaat: 2*3*4*5*6 = 720**/
+let getal1 = Number(prompt("Geef een getal in:"));
+let getal2 = Number(prompt("Geef een getal in:"));
+let fac = 1
+let opvangbak = " "
+for (let i = getal1;i<=getal2;i++){
+ fac =  fac * i
+    opvangbak = opvangbak + i + "*"
 
-let zin = prompt("Voer een zin in")
-console.log(zin.toUpperCase(length));
+}
+console.log(opvangbak)
+
 
