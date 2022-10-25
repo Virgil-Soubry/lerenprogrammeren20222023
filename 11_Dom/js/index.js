@@ -31,13 +31,13 @@ document.writeln("klaar");
 document.write("\t\thallo\nWorld\n")
 document.writeln("\"Hallo, iedereen welkom.\"\n");
 document.writeln("smiley face:\&#128153;\n");*/
-let cursisten = ["Tom", "Tim", "Bart", "Els"];
 
-var newUl = document.createElement("ul");
-document.body.appendChild(newUl);
-for (let index in cursisten){
-    var newli = document.createElement("li")
-    newUl.appendChild(newli);
-    newli.innerHTML = newli.innerHTML + cursisten[index]
+let alleBMW = document.getElementsByClassName("bmw");
+let result = document.getElementById("resultaatArea");
+
+let alleSpans = document.getElementsByTagName("span");
+alleSpans.style.color = "red";
+
+for (let value of alleBMW){
+    result.innerHTML +=`${value.textContent}\n`;
 }
-
