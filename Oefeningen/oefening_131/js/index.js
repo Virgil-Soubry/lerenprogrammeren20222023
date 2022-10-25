@@ -16,6 +16,7 @@ while (getal >= 0) {
     getallenArray.push(getal);
     teller++
 }
+getallenArray.pop();
 let index = Number(prompt("Het hoeveelste getal wenst u te zien?")) - 1;
 index = getallenArray[index];
 document.write(index);
