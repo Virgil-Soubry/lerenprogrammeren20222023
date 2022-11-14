@@ -1,9 +1,8 @@
-26
 var index = 0;
-function show_slide(i){
+function show_slide(){
     //ophalen van de aangeklikte foto
-    index +=i;
-    // alle image tags inladeng
+
+    // alle image tags inladen
     var images = document.getElementsByClassName('image');
     // dots inladen
     var dots = document.getElementsByClassName('dot');
@@ -27,5 +26,15 @@ function show_slide(i){
     // actief maken van de huidige dots
     dots[index].className += " active";
 
+}
+/**i = 0,1,2**/
+function showdot(i){
+    index = i;
+    show_slide();
+}
+/* i= -1 of 1*/
+function showbtn(i){
+    index += i;
+    show_slide();
 }
 window.addEventListener("onload",show_slide(index));
