@@ -19,11 +19,11 @@ taskform.addEventListener("submit", function (e) {
 function addTask(newTask) {
     /*opbouw van de tag*/
     const div = document.createElement("div");
-    div.classList.add("mb-2","d-flex","align-items-center")
+    div.classList.add("mb-2","d-flex","align-items-center");
     const trash = document.createElement("button");
-    trash.classList.add("btn","btn-danger","me-2")
+    trash.classList.add("btn","btn-danger","me-2");
     const checkbox = document.createElement("input");
-    checkbox.classList.add("me-2")
+    checkbox.classList.add("me-2");
     checkbox.type = "checkbox";
     const label = document.createElement("label");
     /*toevoegen van de waarden van de button en de ingevulde taak van de gebruiker*/
