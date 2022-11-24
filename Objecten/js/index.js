@@ -43,11 +43,11 @@ class Persoon{
         this.geboortedatum = geboortedatum;
         this.geslacht = geslacht;
     }
-    berekenLeeftijd =function (){
+   /* berekenLeeftijd =function (){
         const d = new Date();
         let year = d.getFullYear();
         return year-this.geboortedatum
-    }
+    }*/
     present(){
         return `Ik ben een ${this.geslacht} en mijn naam is ${this.naam}`
     }
