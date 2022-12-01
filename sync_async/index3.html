@@ -10,12 +10,14 @@
 <body>
 <p>OPLOSSING om synchrone timeouts te vermijden is om asynchroon te coderen.</p>
 <h1>OPLOSSING HIERVOOR: CALLBACKS (ES5) of PROMISES (ES6)</h1>
-/*
+
+<!--
 function myFunction(callback){
 //code
 callback()
 }
-*/
+-->
+
 <script>
     /*  function callbackFunction(){
           console.log(test);
@@ -37,6 +39,8 @@ callback()
         imageElement.src = objectUrl;
         document.body.appendChild(imageElement);
     }
+    /**programma**/
+
     ShowImage("myimage.jpg","blob",createImage);
 
 
